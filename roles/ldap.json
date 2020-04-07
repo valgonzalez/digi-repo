@@ -1,0 +1,12 @@
+{
+  "name": "ldap",
+  "description": "Administration",
+  "json_class": "Chef::Role",
+  "chef_type": "role",
+  "run_list": [
+    "recipe[dns]",
+    "recipe[usuarios::eliminar]",
+    "recipe[chef-client]",
+    "recipe[chef-client::delete_validation]"
+]
+}

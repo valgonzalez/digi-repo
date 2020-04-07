@@ -1,0 +1,6 @@
+{
+  "name": "inswitch",
+  "description": "Administration",
+  "json_class": "Chef::Role",
+  "chef_type": "role"
+}

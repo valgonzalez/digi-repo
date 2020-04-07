@@ -1,0 +1,7 @@
+{
+  "id": "insupport",
+  "password": "$1$NLVFUmn4$1CN.zbYmMdjwjDZsEHKCq/",
+  "shell": "\/bin\/bash",
+  "groups": [ "inswitch" ],
+  "comment": "inswitch Support."
+}

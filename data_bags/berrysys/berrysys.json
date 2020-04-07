@@ -1,0 +1,7 @@
+{
+  "id": "berrysys",
+  "password": "$1$LVavLA68$mHLSVhlON/OWNH/QyunoH1",
+  "shell": "\/bin\/bash",
+  "groups": [ "berrysys" ],
+  "comment": "Uusario Soporte Berrysys"
+}

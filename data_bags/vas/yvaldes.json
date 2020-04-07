@@ -1,0 +1,7 @@
+{
+  "id": "yvaldes",
+  "password": "$1$MFNWf8vm$25HA2moYiMlBWivrFh6KJ0",
+  "shell": "\/bin\/bash",
+  "groups": [ "vas" ],
+  "comment": "Yissel Valdes."
+}

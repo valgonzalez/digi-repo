@@ -1,0 +1,7 @@
+{
+  "id": "ataylor",
+  "password": "$1$pPQFiexf$nlbDoHVVoROPzqeIidqzn/",
+  "shell": "\/bin\/bash",
+  "groups": [ "linux_admin" ],
+  "comment": "Alexander Taylor"
+}

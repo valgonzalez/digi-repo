@@ -1,0 +1,7 @@
+{
+  "id": "pbxuser",
+  "password": "$1$4JRrKrys$xu7V7iK1ap2fS/1HRRhJR.",
+  "shell": "\/bin\/bash",
+  "groups": [ "pbx" ],
+  "comment": "PBX Support."
+}

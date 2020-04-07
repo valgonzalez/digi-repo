@@ -1,0 +1,7 @@
+{
+  "id": "support",
+  "password": "$1$MDyV.ImD$JOkLW.w2HNmMV5L8mjcPL/",
+  "shell": "\/bin\/bash",
+  "groups": [ "palv0001" ],
+  "comment": "Aseinfo Support."
+}

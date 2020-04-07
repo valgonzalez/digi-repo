@@ -1,0 +1,7 @@
+{
+  "id": "kannel",
+  "password": "$1$VTcJO5xX$AtWXZFf7k0yaOEExb6yYN1",
+  "shell": "\/bin\/bash",
+  "groups": [ "panavaserver3" ],
+  "comment": "Uusario para aplicacion 111"
+}

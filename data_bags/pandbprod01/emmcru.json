@@ -1,0 +1,7 @@
+{
+  "id": "emmcru",
+  "password": "$1$Lb2c2niG$ebua1xyvobh8nuLjH0xLs1",
+  "shell": "\/bin\/bash",
+  "groups": [ "pandbprod01", "oinstall" ],
+  "comment": "Usuario para vas"
+}

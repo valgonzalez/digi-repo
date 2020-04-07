@@ -1,0 +1,7 @@
+{
+  "id": "mentorst",
+  "password": "$1$fvHPQ.8v$jB6HRjWWUISRCXcxz7nWZ1",
+  "shell": "\/bin\/bash",
+  "groups": [ "mentor" ],
+  "comment": "Mentor Support."
+}

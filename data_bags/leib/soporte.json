@@ -1,0 +1,7 @@
+{
+  "id": "soporte",
+  "password": "$1$5B8sFBdw$ZsxdUP65J2W0AQDnnpZRX.",
+  "shell": "\/bin\/bash",
+  "groups": [ "leib" ],
+  "comment": "Soporte Empresa Leib."
+}

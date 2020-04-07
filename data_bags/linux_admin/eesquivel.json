@@ -1,0 +1,7 @@
+{
+  "id": "eesquivel",
+  "password": "$1$o/j1j8Jx$V3qbKZoMkwteqK2FCh6vG.",
+  "shell": "\/bin\/bash",
+  "groups": [ "linux_admin" ],
+  "comment": "Elmer Esquivel"
+}

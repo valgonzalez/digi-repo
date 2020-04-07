@@ -1,0 +1,7 @@
+{
+  "id": "oracle",
+  "password": "$1$Lz5f2hrz$UdS8nneNXX2f3jh7VSiSz.",
+  "shell": "\/bin\/bash",
+  "groups": [ "oracle" ],
+  "comment": "Usuario de base de datos."
+}

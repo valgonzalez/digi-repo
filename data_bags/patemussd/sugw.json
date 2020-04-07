@@ -1,0 +1,7 @@
+{
+  "id": "sugw",
+  "password": "$1$m.b0zvSf$rQHlbRXPUoi0se4Oo/awJ1",
+  "shell": "\/bin\/bash",
+  "groups": [ "patemussd" ],
+  "comment": "Sugw User."
+}

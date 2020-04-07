@@ -1,0 +1,7 @@
+{
+  "id": "lteprocess",
+  "password": "$1$EXUMNCo/$N9Ob.lCRQidzmtFPhBtHc.",
+  "shell": "\/bin\/false",
+  "groups": [ "pantechvm", "vasuser" ],
+  "comment": "LTE Process."
+}

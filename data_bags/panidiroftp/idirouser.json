@@ -1,0 +1,7 @@
+{
+  "id": "idirouser",
+  "password": "$1$EZNyhfGk$OyEc2HAbd2wC0EIQzcmXf0",
+  "shell": "\/bin\/bash",
+  "groups": [ "panidiroftp" ],
+  "comment": "Idiro FTP User."
+}

@@ -1,0 +1,9 @@
+{
+  "name": "vas",
+  "description": "Administration",
+  "json_class": "Chef::Role",
+  "chef_type": "role",
+  "run_list": [
+    "recipe[my_cookbook::rootlog]"
+]
+}

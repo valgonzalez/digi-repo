@@ -1,0 +1,7 @@
+{
+  "id": "vasuser",
+  "password": "$1$VAmBpdpw$abzd9u525PeBxAhC.ti30/",
+  "shell": "\/bin\/bash",
+  "groups": [ "pandbprod02" ],
+  "comment": "Uusario para vas"
+}

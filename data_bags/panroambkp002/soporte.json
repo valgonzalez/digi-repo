@@ -1,0 +1,7 @@
+{
+  "id": "soporte",
+  "password": "$1$LXwUgWpl$KLIcZHyDuLaDHwPRJqFGw/",
+  "shell": "\/bin\/bash",
+  "groups": [ "panroambkp002" ],
+  "comment": "Soporte Grupo."
+}

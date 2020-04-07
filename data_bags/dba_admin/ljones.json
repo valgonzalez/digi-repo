@@ -1,0 +1,7 @@
+{
+  "id": "ljones",
+  "password": "$1$OKJiUqIL$YVknFKgiKM17tO5OIcFOr.",
+  "shell": "\/bin\/bash",
+  "groups": [ "dba_admin" ],
+  "comment": "Lorenzo Jones"
+}
