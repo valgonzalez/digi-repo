@@ -1,6 +1,6 @@
 #
 # Cookbook:: my_cookbook
-# Recipe:: pa1gen02a
+# Recipe:: panlxd001
 #
 # Copyright:: 2019, The Authors, All Rights Reserved.
 #
