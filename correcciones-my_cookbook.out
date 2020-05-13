@@ -1,0 +1,505 @@
+# Esta es la salida del comando cookstyle cookbooks/my_cookbook.  23/4/2020
+#
+
+Inspecting 115 files
+..CCCC.C.CCCCCCCCCCCCCCCCCCCCCCCCCCCC.CC...........................................................................
+
+Offenses:
+
+cookbooks/my_cookbook/recipes/panappscr001.rb:7:58: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+node.default['openssh']['server']['permit_root_login'] = "no"
+                                                         ^^^^
+cookbooks/my_cookbook/recipes/panappscr001.rb:8:64: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+node.default['openssh']['server']['password_authentication'] = "yes"
+                                                               ^^^^^
+cookbooks/my_cookbook/recipes/panappscr001.rb:9:53: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+node.default['openssh']['server']['allow_groups'] = "linux_admin panappscr001 www-data"
+                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+cookbooks/my_cookbook/recipes/panappscr001.rb:15:51: C: Use %w or %W for an array of words.
+node.default['authorization']['sudo']['groups'] = ['linux_admin', 'be031793']
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+cookbooks/my_cookbook/recipes/appgrouptest.rb:7:58: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+node.default['openssh']['server']['permit_root_login'] = "no"
+                                                         ^^^^
+cookbooks/my_cookbook/recipes/appgrouptest.rb:8:64: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+node.default['openssh']['server']['password_authentication'] = "yes"
+                                                               ^^^^^
+cookbooks/my_cookbook/recipes/appgrouptest.rb:9:53: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+node.default['openssh']['server']['allow_groups'] = "linux_admin"
+                                                    ^^^^^^^^^^^^^
+cookbooks/my_cookbook/recipes/srvapp007.rb:7:58: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+node.default['openssh']['server']['permit_root_login'] = "no"
+                                                         ^^^^
+cookbooks/my_cookbook/recipes/srvapp007.rb:8:64: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+node.default['openssh']['server']['password_authentication'] = "yes"
+                                                               ^^^^^
+cookbooks/my_cookbook/recipes/srvapp007.rb:9:53: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+node.default['openssh']['server']['allow_groups'] = "itops sysadmin vas local grupo_jamaica berrysys"
+                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+cookbooks/my_cookbook/recipes/srvapp007.rb:15:51: C: Use %w or %W for an array of words.
+node.default['authorization']['sudo']['groups'] = ['itops', 'sysadmin']
+                                                  ^^^^^^^^^^^^^^^^^^^^^
+cookbooks/my_cookbook/recipes/panidiroftp.rb:7:20: C: Surrounding space missing for operator =.
+ENV['MY_PROXY_URL']='http://172.27.65.37:8080/'
+                   ^
+cookbooks/my_cookbook/recipes/panidiroftp.rb:8:18: C: Surrounding space missing for operator =.
+ENV['HTTP_PROXY']='http://172.27.65.37:8080/'
+                 ^
+cookbooks/my_cookbook/recipes/panidiroftp.rb:9:19: C: Surrounding space missing for operator =.
+ENV['HTTPS_PROXY']='http://172.27.65.37:8080/'
+                  ^
+cookbooks/my_cookbook/recipes/panidiroftp.rb:10:17: C: Surrounding space missing for operator =.
+ENV['FTP_PROXY']='http://172.27.65.37:8080/'
+                ^
+cookbooks/my_cookbook/recipes/panidiroftp.rb:11:18: C: Surrounding space missing for operator =.
+ENV['http_proxy']='http://172.27.65.37:8080/'
+                 ^
+cookbooks/my_cookbook/recipes/panidiroftp.rb:12:19: C: Surrounding space missing for operator =.
+ENV['https_proxy']='http://172.27.65.37:8080/'
+                  ^
+cookbooks/my_cookbook/recipes/panidiroftp.rb:13:17: C: Surrounding space missing for operator =.
+ENV['ftp_proxy']='http://172.27.65.37:8080/'
+                ^
+cookbooks/my_cookbook/recipes/panidiroftp.rb:14:16: C: Surrounding space missing for operator =.
+ENV['no_proxy']='localhost,127.0.0.0/8,127.0.1.1,127.0.1.1*,panchefserver000.digicelgroup.local,panchefserver000'
+               ^
+cookbooks/my_cookbook/recipes/panidiroftp.rb:15:14: C: Surrounding space missing for operator =.
+ENV['EDITOR']='vi'
+             ^
+cookbooks/my_cookbook/recipes/panidiroftp.rb:16:13: C: Surrounding space missing for operator =.
+ENV['proxy']='http://172.27.65.37:8080/'
+            ^
+cookbooks/my_cookbook/recipes/panidiroftp.rb:19:58: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+node.default['openssh']['server']['permit_root_login'] = "no"
+                                                         ^^^^
+cookbooks/my_cookbook/recipes/panidiroftp.rb:20:64: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+node.default['openssh']['server']['password_authentication'] = "yes"
+                                                               ^^^^^
+cookbooks/my_cookbook/recipes/panidiroftp.rb:21:53: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+node.default['openssh']['server']['allow_groups'] = "linux_admin panidiroftp"
+                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+cookbooks/my_cookbook/recipes/panidiroftp.rb:27:51: C: Use %w or %W for an array of words.
+node.default['authorization']['sudo']['groups'] = ['linux_admin', 'be031793']
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+cookbooks/my_cookbook/recipes/panrepodb002.rb:7:58: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+node.default['openssh']['server']['permit_root_login'] = "no"
+                                                         ^^^^
+cookbooks/my_cookbook/recipes/panrepodb002.rb:8:64: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+node.default['openssh']['server']['password_authentication'] = "yes"
+                                                               ^^^^^
+cookbooks/my_cookbook/recipes/panrepodb002.rb:9:53: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+node.default['openssh']['server']['allow_groups'] = "linux_admin dba_admin oinstall"
+                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+cookbooks/my_cookbook/recipes/patemussd.rb:7:58: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+node.default['openssh']['server']['permit_root_login'] = "no"
+                                                         ^^^^
+cookbooks/my_cookbook/recipes/patemussd.rb:8:64: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+node.default['openssh']['server']['password_authentication'] = "yes"
+                                                               ^^^^^
+cookbooks/my_cookbook/recipes/patemussd.rb:9:53: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+node.default['openssh']['server']['allow_groups'] = "linux_admin hpe vas leib patemussd"
+                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+cookbooks/my_cookbook/recipes/inswitch.rb:7:58: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+node.default['openssh']['server']['permit_root_login'] = "no"
+                                                         ^^^^
+cookbooks/my_cookbook/recipes/inswitch.rb:8:64: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+node.default['openssh']['server']['password_authentication'] = "yes"
+                                                               ^^^^^
+cookbooks/my_cookbook/recipes/inswitch.rb:9:53: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+node.default['openssh']['server']['allow_groups'] = "linux_admin inswitch"
+                                                    ^^^^^^^^^^^^^^^^^^^^^^
+cookbooks/my_cookbook/recipes/inswitch.rb:15:51: C: Use %w or %W for an array of words.
+node.default['authorization']['sudo']['groups'] = ['linux_admin', 'inswitch']
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+cookbooks/my_cookbook/recipes/inswitch-db.rb:7:58: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+node.default['openssh']['server']['permit_root_login'] = "no"
+                                                         ^^^^
+cookbooks/my_cookbook/recipes/inswitch-db.rb:8:64: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+node.default['openssh']['server']['password_authentication'] = "yes"
+                                                               ^^^^^
+cookbooks/my_cookbook/recipes/inswitch-db.rb:9:53: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+node.default['openssh']['server']['allow_groups'] = "linux_admin dba_admin oinstall"
+                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+cookbooks/my_cookbook/recipes/inswitch-db.rb:10:55: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+node.default['openssh']['server']['x11_forwarding'] = "yes"
+                                                      ^^^^^
+cookbooks/my_cookbook/recipes/inswitch-db.rb:11:57: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+node.default['openssh']['server']['login_grace_time'] = "0"
+                                                        ^^^
+cookbooks/my_cookbook/recipes/pandpgw004.rb:7:58: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+node.default['openssh']['server']['permit_root_login'] = "yes"
+                                                         ^^^^^
+cookbooks/my_cookbook/recipes/pandpgw004.rb:8:64: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+node.default['openssh']['server']['password_authentication'] = "yes"
+                                                               ^^^^^
+cookbooks/my_cookbook/recipes/pandpgw004.rb:9:53: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+node.default['openssh']['server']['allow_groups'] = "linux_admin root"
+                                                    ^^^^^^^^^^^^^^^^^^
+cookbooks/my_cookbook/recipes/panadmunix000.rb:7:1: C: Missing space after #.
+#node.default['openssh']['server']['permit_root_login'] = "no"
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+cookbooks/my_cookbook/recipes/panadmunix000.rb:8:1: C: Missing space after #.
+#node.default['openssh']['server']['password_authentication'] = "yes"
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+cookbooks/my_cookbook/recipes/panadmunix000.rb:9:1: C: Missing space after #.
+#node.default['openssh']['server']['allow_groups'] = "linux_admin"
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+cookbooks/my_cookbook/recipes/panadmunix000.rb:11:1: C: Missing space after #.
+#include_recipe 'openssh'
+^^^^^^^^^^^^^^^^^^^^^^^^^
+cookbooks/my_cookbook/recipes/pa1fdasmsc02.rb:7:1: C: Missing space after #.
+#node.default['openssh']['server']['permit_root_login'] = "no"
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+cookbooks/my_cookbook/recipes/pa1fdasmsc02.rb:8:1: C: Missing space after #.
+#node.default['openssh']['server']['password_authentication'] = "yes"
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+cookbooks/my_cookbook/recipes/pa1fdasmsc02.rb:9:1: C: Missing space after #.
+#node.default['openssh']['server']['allow_groups'] = "itops vas root fda"
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+cookbooks/my_cookbook/recipes/pa1fdasmsc02.rb:11:1: C: Missing space after #.
+#include_recipe 'openssh'
+^^^^^^^^^^^^^^^^^^^^^^^^^
+cookbooks/my_cookbook/recipes/pa1fdasmsc02.rb:15:51: C: Use %w or %W for an array of words.
+node.default['authorization']['sudo']['groups'] = ['sysadmin', 'itops']
+                                                  ^^^^^^^^^^^^^^^^^^^^^
+cookbooks/my_cookbook/recipes/pandpgw002.rb:7:58: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+node.default['openssh']['server']['permit_root_login'] = "no"
+                                                         ^^^^
+cookbooks/my_cookbook/recipes/pandpgw002.rb:8:64: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+node.default['openssh']['server']['password_authentication'] = "yes"
+                                                               ^^^^^
+cookbooks/my_cookbook/recipes/pandpgw002.rb:9:53: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+node.default['openssh']['server']['allow_groups'] = "linux_admin"
+                                                    ^^^^^^^^^^^^^
+cookbooks/my_cookbook/recipes/rootlog.rb:18:7: C: Unnecessary spacing detected.
+  mode  '0755'
+      ^
+cookbooks/my_cookbook/recipes/panroambkp002.rb:8:1: C: Missing space after #.
+#node.default['authorization']['sudo']['groups'] = ['linux_admin', 'panroambkp002']
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+cookbooks/my_cookbook/recipes/panmentordb001.rb:7:58: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+node.default['openssh']['server']['permit_root_login'] = "no"
+                                                         ^^^^
+cookbooks/my_cookbook/recipes/panmentordb001.rb:8:64: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+node.default['openssh']['server']['password_authentication'] = "yes"
+                                                               ^^^^^
+cookbooks/my_cookbook/recipes/panmentordb001.rb:9:53: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+node.default['openssh']['server']['allow_groups'] = "linux_admin dba_admin oinstall mentor"
+                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+cookbooks/my_cookbook/recipes/panmentordb001.rb:10:55: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+node.default['openssh']['server']['x11_forwarding'] = "yes"
+                                                      ^^^^^
+cookbooks/my_cookbook/recipes/panmentordb001.rb:11:57: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+node.default['openssh']['server']['login_grace_time'] = "0"
+                                                        ^^^
+cookbooks/my_cookbook/recipes/pa1gen02a.rb:7:58: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+node.default['openssh']['server']['permit_root_login'] = "no"
+                                                         ^^^^
+cookbooks/my_cookbook/recipes/pa1gen02a.rb:8:64: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+node.default['openssh']['server']['password_authentication'] = "yes"
+                                                               ^^^^^
+cookbooks/my_cookbook/recipes/pa1gen02a.rb:9:53: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+node.default['openssh']['server']['allow_groups'] = "linux_admin"
+                                                    ^^^^^^^^^^^^^
+cookbooks/my_cookbook/recipes/pa1gen02a.rb:10:55: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+node.default['openssh']['server']['x11_forwarding'] = "yes"
+                                                      ^^^^^
+cookbooks/my_cookbook/recipes/pa1gen02a.rb:11:57: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+node.default['openssh']['server']['login_grace_time'] = "0"
+                                                        ^^^
+cookbooks/my_cookbook/recipes/dockerhost.rb:7:20: C: Surrounding space missing for operator =.
+ENV['MY_PROXY_URL']='http://172.27.65.37:8080/'
+                   ^
+cookbooks/my_cookbook/recipes/dockerhost.rb:8:18: C: Surrounding space missing for operator =.
+ENV['HTTP_PROXY']='http://172.27.65.37:8080/'
+                 ^
+cookbooks/my_cookbook/recipes/dockerhost.rb:9:19: C: Surrounding space missing for operator =.
+ENV['HTTPS_PROXY']='http://172.27.65.37:8080/'
+                  ^
+cookbooks/my_cookbook/recipes/dockerhost.rb:10:17: C: Surrounding space missing for operator =.
+ENV['FTP_PROXY']='http://172.27.65.37:8080/'
+                ^
+cookbooks/my_cookbook/recipes/dockerhost.rb:11:18: C: Surrounding space missing for operator =.
+ENV['http_proxy']='http://172.27.65.37:8080/'
+                 ^
+cookbooks/my_cookbook/recipes/dockerhost.rb:12:19: C: Surrounding space missing for operator =.
+ENV['https_proxy']='http://172.27.65.37:8080/'
+                  ^
+cookbooks/my_cookbook/recipes/dockerhost.rb:13:17: C: Surrounding space missing for operator =.
+ENV['ftp_proxy']='http://172.27.65.37:8080/'
+                ^
+cookbooks/my_cookbook/recipes/dockerhost.rb:14:16: C: Surrounding space missing for operator =.
+ENV['no_proxy']='localhost,127.0.0.0/8,127.0.1.1,127.0.1.1*,panchefserver000.digicelgroup.local,panchefserver000'
+               ^
+cookbooks/my_cookbook/recipes/dockerhost.rb:15:14: C: Surrounding space missing for operator =.
+ENV['EDITOR']='vi'
+             ^
+cookbooks/my_cookbook/recipes/dockerhost.rb:18:58: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+node.default['openssh']['server']['permit_root_login'] = "no"
+                                                         ^^^^
+cookbooks/my_cookbook/recipes/dockerhost.rb:19:64: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+node.default['openssh']['server']['password_authentication'] = "yes"
+                                                               ^^^^^
+cookbooks/my_cookbook/recipes/dockerhost.rb:20:53: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+node.default['openssh']['server']['allow_groups'] = "linux_admin"
+                                                    ^^^^^^^^^^^^^
+cookbooks/my_cookbook/recipes/palv0001.rb:9:58: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+node.default['openssh']['server']['permit_root_login'] = "no"
+                                                         ^^^^
+cookbooks/my_cookbook/recipes/palv0001.rb:10:64: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+node.default['openssh']['server']['password_authentication'] = "yes"
+                                                               ^^^^^
+cookbooks/my_cookbook/recipes/palv0001.rb:11:53: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+node.default['openssh']['server']['allow_groups'] = "linux_admin palv0001"
+                                                    ^^^^^^^^^^^^^^^^^^^^^^
+cookbooks/my_cookbook/recipes/palv0001.rb:17:51: C: Use %w or %W for an array of words.
+node.default['authorization']['sudo']['groups'] = ['linux_admin', 'palv0001']
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+cookbooks/my_cookbook/recipes/srvapp002.rb:8:1: C: Missing space after #.
+#node.default['openssh']['server']['permit_root_login'] = "no"
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+cookbooks/my_cookbook/recipes/srvapp002.rb:9:1: C: Missing space after #.
+#node.default['openssh']['server']['password_authentication'] = "yes"
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+cookbooks/my_cookbook/recipes/srvapp002.rb:10:1: C: Missing space after #.
+#node.default['openssh']['server']['allow_groups'] = "itops sysadmin vas local grupo_jamaica berrysys"
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+cookbooks/my_cookbook/recipes/srvapp002.rb:12:1: C: Missing space after #.
+#include_recipe 'openssh'
+^^^^^^^^^^^^^^^^^^^^^^^^^
+cookbooks/my_cookbook/recipes/srvapp002.rb:16:51: C: Use %w or %W for an array of words.
+node.default['authorization']['sudo']['groups'] = ['itops', 'sysadmin']
+                                                  ^^^^^^^^^^^^^^^^^^^^^
+cookbooks/my_cookbook/recipes/panlxd001.rb:7:58: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+node.default['openssh']['server']['permit_root_login'] = "no"
+                                                         ^^^^
+cookbooks/my_cookbook/recipes/panlxd001.rb:8:64: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+node.default['openssh']['server']['password_authentication'] = "yes"
+                                                               ^^^^^
+cookbooks/my_cookbook/recipes/panlxd001.rb:9:53: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+node.default['openssh']['server']['allow_groups'] = "linux_admin"
+                                                    ^^^^^^^^^^^^^
+cookbooks/my_cookbook/recipes/panlxd001.rb:10:55: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+node.default['openssh']['server']['x11_forwarding'] = "yes"
+                                                      ^^^^^
+cookbooks/my_cookbook/recipes/panlxd001.rb:11:57: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+node.default['openssh']['server']['login_grace_time'] = "0"
+                                                        ^^^
+cookbooks/my_cookbook/recipes/srvapp004.rb:7:58: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+node.default['openssh']['server']['permit_root_login'] = "no"
+                                                         ^^^^
+cookbooks/my_cookbook/recipes/srvapp004.rb:8:64: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+node.default['openssh']['server']['password_authentication'] = "yes"
+                                                               ^^^^^
+cookbooks/my_cookbook/recipes/srvapp004.rb:9:53: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+node.default['openssh']['server']['allow_groups'] = "itops sysadmin vas grupo_jamaica Ericsson local berrysys"
+                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+cookbooks/my_cookbook/recipes/srvapp004.rb:15:51: C: Use %w or %W for an array of words.
+node.default['authorization']['sudo']['groups'] = ['itops', 'sysadmin']
+                                                  ^^^^^^^^^^^^^^^^^^^^^
+cookbooks/my_cookbook/recipes/pandpgw001.rb:7:58: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+node.default['openssh']['server']['permit_root_login'] = "no"
+                                                         ^^^^
+cookbooks/my_cookbook/recipes/pandpgw001.rb:8:64: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+node.default['openssh']['server']['password_authentication'] = "yes"
+                                                               ^^^^^
+cookbooks/my_cookbook/recipes/pandpgw001.rb:9:53: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+node.default['openssh']['server']['allow_groups'] = "linux_admin"
+                                                    ^^^^^^^^^^^^^
+cookbooks/my_cookbook/recipes/pandpgw003.rb:8:58: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+node.default['openssh']['server']['permit_root_login'] = "no"
+                                                         ^^^^
+cookbooks/my_cookbook/recipes/pandpgw003.rb:9:64: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+node.default['openssh']['server']['password_authentication'] = "yes"
+                                                               ^^^^^
+cookbooks/my_cookbook/recipes/pandpgw003.rb:10:53: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+node.default['openssh']['server']['allow_groups'] = "linux_admin"
+                                                    ^^^^^^^^^^^^^
+cookbooks/my_cookbook/recipes/pantransactionapp002.rb:7:58: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+node.default['openssh']['server']['permit_root_login'] = "no"
+                                                         ^^^^
+cookbooks/my_cookbook/recipes/pantransactionapp002.rb:8:64: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+node.default['openssh']['server']['password_authentication'] = "yes"
+                                                               ^^^^^
+cookbooks/my_cookbook/recipes/pantransactionapp002.rb:9:53: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+node.default['openssh']['server']['allow_groups'] = "linux_admin transaction"
+                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+cookbooks/my_cookbook/recipes/pantransactionapp002.rb:15:51: C: Use %w or %W for an array of words.
+node.default['authorization']['sudo']['groups'] = ['linux_admin', 'transaction']
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+cookbooks/my_cookbook/recipes/pandpcm001.rb:8:58: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+node.default['openssh']['server']['permit_root_login'] = "no"
+                                                         ^^^^
+cookbooks/my_cookbook/recipes/pandpcm001.rb:9:64: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+node.default['openssh']['server']['password_authentication'] = "yes"
+                                                               ^^^^^
+cookbooks/my_cookbook/recipes/pandpcm001.rb:10:53: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+node.default['openssh']['server']['allow_groups'] = "linux_admin dprotector"
+                                                    ^^^^^^^^^^^^^^^^^^^^^^^^
+cookbooks/my_cookbook/recipes/pandbcentral.rb:7:58: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+node.default['openssh']['server']['permit_root_login'] = "no"
+                                                         ^^^^
+cookbooks/my_cookbook/recipes/pandbcentral.rb:8:64: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+node.default['openssh']['server']['password_authentication'] = "yes"
+                                                               ^^^^^
+cookbooks/my_cookbook/recipes/pandbcentral.rb:9:53: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+node.default['openssh']['server']['allow_groups'] = "linux_admin dba_admin oinstall"
+                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+cookbooks/my_cookbook/recipes/pandbcentral.rb:10:55: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+node.default['openssh']['server']['x11_forwarding'] = "yes"
+                                                      ^^^^^
+cookbooks/my_cookbook/recipes/pandbcentral.rb:11:57: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+node.default['openssh']['server']['login_grace_time'] = "0"
+                                                        ^^^
+cookbooks/my_cookbook/recipes/pandbcentral.rb:17:51: C: Use %w or %W for an array of words.
+node.default['authorization']['sudo']['groups'] = ['linux_admin', 'dba_admin']
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+cookbooks/my_cookbook/recipes/pandw-dmz.rb:7:58: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+node.default['openssh']['server']['permit_root_login'] = "no"
+                                                         ^^^^
+cookbooks/my_cookbook/recipes/pandw-dmz.rb:8:64: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+node.default['openssh']['server']['password_authentication'] = "yes"
+                                                               ^^^^^
+cookbooks/my_cookbook/recipes/pandw-dmz.rb:9:53: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+node.default['openssh']['server']['allow_groups'] = "linux_admin local"
+                                                    ^^^^^^^^^^^^^^^^^^^
+cookbooks/my_cookbook/recipes/pandbprod01.rb:7:58: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+node.default['openssh']['server']['permit_root_login'] = "no"
+                                                         ^^^^
+cookbooks/my_cookbook/recipes/pandbprod01.rb:8:64: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+node.default['openssh']['server']['password_authentication'] = "yes"
+                                                               ^^^^^
+cookbooks/my_cookbook/recipes/pandbprod01.rb:9:53: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+node.default['openssh']['server']['allow_groups'] = "linux_admin dba_admin oinstall vasuser"
+                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+cookbooks/my_cookbook/recipes/pandbprod01.rb:10:55: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+node.default['openssh']['server']['x11_forwarding'] = "yes"
+                                                      ^^^^^
+cookbooks/my_cookbook/recipes/pandbprod01.rb:11:57: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+node.default['openssh']['server']['login_grace_time'] = "0"
+                                                        ^^^
+cookbooks/my_cookbook/recipes/pantransactionapp001.rb:7:58: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+node.default['openssh']['server']['permit_root_login'] = "no"
+                                                         ^^^^
+cookbooks/my_cookbook/recipes/pantransactionapp001.rb:8:64: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+node.default['openssh']['server']['password_authentication'] = "yes"
+                                                               ^^^^^
+cookbooks/my_cookbook/recipes/pantransactionapp001.rb:9:53: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+node.default['openssh']['server']['allow_groups'] = "linux_admin transaction"
+                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+cookbooks/my_cookbook/recipes/pantransactionapp001.rb:15:51: C: Use %w or %W for an array of words.
+node.default['authorization']['sudo']['groups'] = ['linux_admin', 'transaction']
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+cookbooks/my_cookbook/recipes/panbigdata001.rb:8:51: C: Use %w or %W for an array of words.
+node.default['authorization']['sudo']['groups'] = ['linux_admin', 'sudo', 'admin']
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+cookbooks/my_cookbook/recipes/pandbprod02.rb:7:58: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+node.default['openssh']['server']['permit_root_login'] = "no"
+                                                         ^^^^
+cookbooks/my_cookbook/recipes/pandbprod02.rb:8:64: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+node.default['openssh']['server']['password_authentication'] = "yes"
+                                                               ^^^^^
+cookbooks/my_cookbook/recipes/pandbprod02.rb:9:53: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+node.default['openssh']['server']['allow_groups'] = "linux_admin dba_admin oinstall vasuser"
+                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+cookbooks/my_cookbook/recipes/pandbprod02.rb:10:55: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+node.default['openssh']['server']['x11_forwarding'] = "yes"
+                                                      ^^^^^
+cookbooks/my_cookbook/recipes/pandbprod02.rb:11:57: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+node.default['openssh']['server']['login_grace_time'] = "0"
+                                                        ^^^
+cookbooks/my_cookbook/recipes/test-centos7.rb:7:20: C: Surrounding space missing for operator =.
+ENV['MY_PROXY_URL']='http://172.27.65.37:8080/'
+                   ^
+cookbooks/my_cookbook/recipes/test-centos7.rb:8:18: C: Surrounding space missing for operator =.
+ENV['HTTP_PROXY']='http://172.27.65.37:8080/'
+                 ^
+cookbooks/my_cookbook/recipes/test-centos7.rb:9:19: C: Surrounding space missing for operator =.
+ENV['HTTPS_PROXY']='http://172.27.65.37:8080/'
+                  ^
+cookbooks/my_cookbook/recipes/test-centos7.rb:10:17: C: Surrounding space missing for operator =.
+ENV['FTP_PROXY']='http://172.27.65.37:8080/'
+                ^
+cookbooks/my_cookbook/recipes/test-centos7.rb:11:18: C: Surrounding space missing for operator =.
+ENV['http_proxy']='http://172.27.65.37:8080/'
+                 ^
+cookbooks/my_cookbook/recipes/test-centos7.rb:12:19: C: Surrounding space missing for operator =.
+ENV['https_proxy']='http://172.27.65.37:8080/'
+                  ^
+cookbooks/my_cookbook/recipes/test-centos7.rb:13:17: C: Surrounding space missing for operator =.
+ENV['ftp_proxy']='http://172.27.65.37:8080/'
+                ^
+cookbooks/my_cookbook/recipes/test-centos7.rb:14:16: C: Surrounding space missing for operator =.
+ENV['no_proxy']='localhost,127.0.0.0/8,127.0.1.1,127.0.1.1*,panchefserver000.digicelgroup.local,panchefserver000'
+               ^
+cookbooks/my_cookbook/recipes/test-centos7.rb:15:14: C: Surrounding space missing for operator =.
+ENV['EDITOR']='vi'
+             ^
+cookbooks/my_cookbook/recipes/test-centos7.rb:16:13: C: Surrounding space missing for operator =.
+ENV['proxy']='http://172.27.65.37:8080/'
+            ^
+cookbooks/my_cookbook/recipes/test-centos7.rb:19:58: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+node.default['openssh']['server']['permit_root_login'] = "no"
+                                                         ^^^^
+cookbooks/my_cookbook/recipes/test-centos7.rb:20:64: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+node.default['openssh']['server']['password_authentication'] = "yes"
+                                                               ^^^^^
+cookbooks/my_cookbook/recipes/test-centos7.rb:21:53: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+node.default['openssh']['server']['allow_groups'] = "linux_admin hpe vas leib patemussd"
+                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+cookbooks/my_cookbook/recipes/test-centos7.rb:22:55: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+node.default['openssh']['server']['x11_forwarding'] = "yes"
+                                                      ^^^^^
+cookbooks/my_cookbook/recipes/test-centos7.rb:23:57: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+node.default['openssh']['server']['login_grace_time'] = "0"
+                                                        ^^^
+cookbooks/my_cookbook/recipes/test-centos7.rb:34:6: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+bash "insert_line" do
+     ^^^^^^^^^^^^^
+cookbooks/my_cookbook/recipes/test-centos7.rb:35:8: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+  user "root"
+       ^^^^^^
+cookbooks/my_cookbook/recipes/test-centos7.rb:39:10: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+  not_if "grep -q rootlog.ksh /etc/profile"
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+cookbooks/my_cookbook/recipes/panmentordb002.rb:7:58: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+node.default['openssh']['server']['permit_root_login'] = "no"
+                                                         ^^^^
+cookbooks/my_cookbook/recipes/panmentordb002.rb:8:64: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+node.default['openssh']['server']['password_authentication'] = "yes"
+                                                               ^^^^^
+cookbooks/my_cookbook/recipes/panmentordb002.rb:9:53: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+node.default['openssh']['server']['allow_groups'] = "linux_admin dba_admin oinstall mentor"
+                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+cookbooks/my_cookbook/recipes/panmentordb002.rb:10:55: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+node.default['openssh']['server']['x11_forwarding'] = "yes"
+                                                      ^^^^^
+cookbooks/my_cookbook/recipes/panmentordb002.rb:11:57: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+node.default['openssh']['server']['login_grace_time'] = "0"
+                                                        ^^^
+cookbooks/my_cookbook/recipes/panoemvm002.rb:7:58: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+node.default['openssh']['server']['permit_root_login'] = "no"
+                                                         ^^^^
+cookbooks/my_cookbook/recipes/panoemvm002.rb:8:64: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+node.default['openssh']['server']['password_authentication'] = "yes"
+                                                               ^^^^^
+cookbooks/my_cookbook/recipes/panoemvm002.rb:9:53: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+node.default['openssh']['server']['allow_groups'] = "linux_admin dba_admin oracle"
+                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+cookbooks/my_cookbook/recipes/panoemvm002.rb:10:55: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+node.default['openssh']['server']['x11_forwarding'] = "yes"
+                                                      ^^^^^
+cookbooks/my_cookbook/recipes/panoemvm002.rb:11:57: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+node.default['openssh']['server']['login_grace_time'] = "0"
+                                                        ^^^
+cookbooks/my_cookbook/recipes/panrepodb001.rb:7:58: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+node.default['openssh']['server']['permit_root_login'] = "no"
+                                                         ^^^^
+cookbooks/my_cookbook/recipes/panrepodb001.rb:8:64: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+node.default['openssh']['server']['password_authentication'] = "yes"
+                                                               ^^^^^
+cookbooks/my_cookbook/recipes/panrepodb001.rb:9:53: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+node.default['openssh']['server']['allow_groups'] = "linux_admin dba_admin oinstall"
+                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+115 files inspected, 165 offenses detected
