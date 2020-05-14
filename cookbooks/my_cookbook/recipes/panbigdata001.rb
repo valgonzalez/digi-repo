@@ -16,12 +16,12 @@ include_recipe 'sudo'
 #
 user 'admin01' do
   shell '/bin/false'
-  action 'lock'
+  action 'unlock'
 end
 #
-user 'panitops' do
-  shell '/bin/bash'
-  action 'modify'
-end
+#user 'panitops' do
+#  shell '/bin/bash'
+#  action 'modify'
+#end
 #
 include_recipe 'users'
