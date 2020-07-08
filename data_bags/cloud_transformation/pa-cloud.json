@@ -1,0 +1,8 @@
+{
+  "id": "pa-cloud",
+  "password": "$1$heYJ6e0G$Tad1Q7DIJZEWJdjLD2J18/",
+  "shell": "\/bin\/bash",
+  "groups": [ "cloud_transformation" ],
+  "action": "create",
+  "comment": "Cloud transformation user."
+}

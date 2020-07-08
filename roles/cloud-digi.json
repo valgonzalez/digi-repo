@@ -1,5 +1,5 @@
 {
-  "name": "it",
+  "name": "cloud-digi",
   "description": "Administration",
   "json_class": "Chef::Role",
   "chef_type": "role",

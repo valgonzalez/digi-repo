@@ -1,0 +1,300 @@
+Node Name:   srvapp002.digicelgroup.local
+Environment: _default
+FQDN:        srvapp002.digicelgroup.local
+IP:          172.27.98.204
+Run List:    recipe[my_cookbook::srvapp002], role[it], role[ldap]
+Roles:       it, ldap
+Recipes:     my_cookbook::srvapp002, my_cookbook::rootlog, dns, dns::default, usuarios::eliminar, chef-client, chef-client::default, chef-client::delete_validation, sudo::default, chef-client::service, chef-client::init_service
+Platform:    redhat 6.7
+Tags:        
+
+Node Name:   pa1gen02a
+Environment: _default
+FQDN:        pa1gen02a
+IP:          172.27.65.36
+Run List:    role[it], role[inicial], role[ntp], recipe[my_cookbook::pa1gen02a]
+Roles:       it, inicial, ntp
+Recipes:     my_cookbook::rootlog, dns, dns::default, usuarios::linux_admin, usuarios::eliminar, chef-client, chef-client::default, chef-client::delete_validation, ntp, ntp::default, my_cookbook::pa1gen02a, chef-client::service, chef-client::systemd_service, ntp::apparmor, openssh::default, sudo::default
+Platform:    ubuntu 18.04
+Tags:        
+
+Node Name:   pandbcentral001.digicelgroup.local
+Environment: _default
+FQDN:        pandbcentral001.digicelgroup.local
+IP:          172.27.71.162
+Run List:    role[it], role[inicial], role[ntp], recipe[usuarios::dba_admin], recipe[my_cookbook::pandbcentral]
+Roles:       it, inicial, ntp
+Recipes:     my_cookbook::rootlog, dns, dns::default, usuarios::linux_admin, usuarios::eliminar, chef-client, chef-client::default, chef-client::delete_validation, ntp, ntp::default, usuarios::dba_admin, my_cookbook::pandbcentral, chef-client::service, chef-client::systemd_service, openssh::default, sudo::default
+Platform:    oracle 7.6
+Tags:        
+
+Node Name:   PANMENTORDB002
+Environment: _default
+FQDN:        PANMENTORDB002
+IP:          172.27.90.17
+Run List:    role[it], role[inicial], role[ntp], role[mentor], recipe[usuarios::dba_admin], recipe[my_cookbook::panmentordb002]
+Roles:       it, inicial, ntp, mentor
+Recipes:     my_cookbook::rootlog, dns, dns::default, usuarios::linux_admin, usuarios::eliminar, chef-client, chef-client::default, chef-client::delete_validation, ntp, ntp::default, usuarios::dba_admin, my_cookbook::panmentordb002, chef-client::service, chef-client::systemd_service, openssh::default, sudo::default, users::default
+Platform:    centos 7.6.1810
+Tags:        
+
+Node Name:   pandpgw001.digicelgroup.local
+Environment: _default
+FQDN:        pandpgw001.digicelgroup.local
+IP:          172.27.65.73
+Run List:    role[it], role[inicial], role[ntp], recipe[my_cookbook::pandpgw001]
+Roles:       it, inicial, ntp
+Recipes:     my_cookbook::rootlog, dns, dns::default, usuarios::linux_admin, usuarios::eliminar, chef-client, chef-client::default, chef-client::delete_validation, ntp, ntp::default, my_cookbook::pandpgw001, chef-client::service, chef-client::init_service, openssh::default, sudo::default
+Platform:    centos 6.8
+Tags:        
+
+Node Name:   panidiroftp.digicelgroup.local
+Environment: _default
+FQDN:        
+IP:          172.27.80.195
+Run List:    recipe[my_cookbook::panidiroftp], role[it], role[inicial], role[ntp]
+Roles:       it, inicial, ntp
+Recipes:     my_cookbook::panidiroftp, my_cookbook::rootlog, dns, dns::default, usuarios::linux_admin, usuarios::eliminar, chef-client, chef-client::default, chef-client::delete_validation, ntp, ntp::default, openssh::default, sudo::default, users::default, chef-client::service, chef-client::systemd_service
+Platform:    centos 7.6.1810
+Tags:        
+
+Node Name:   palv0005
+Environment: _default
+FQDN:        
+IP:          172.27.71.173
+Run List:    role[it], role[inswitch], role[inicial], role[ntp], recipe[my_cookbook::inswitch]
+Roles:       it, inswitch, inicial, ntp
+Recipes:     my_cookbook::rootlog, dns, dns::default, usuarios::linux_admin, usuarios::eliminar, chef-client, chef-client::default, chef-client::delete_validation, ntp, ntp::default, my_cookbook::inswitch, chef-client::service, chef-client::systemd_service, openssh::default, sudo::default, users::default
+Platform:    centos 7.6.1810
+Tags:        
+
+Node Name:   pantransactionapp001
+Environment: _default
+FQDN:        
+IP:          172.27.71.233
+Run List:    role[inicial], role[it], role[ntp], recipe[my_cookbook::pantransactionapp001]
+Roles:       inicial, it, ntp
+Recipes:     dns, dns::default, usuarios::linux_admin, usuarios::eliminar, chef-client, chef-client::default, chef-client::delete_validation, my_cookbook::rootlog, ntp, ntp::default, my_cookbook::pantransactionapp001, chef-client::service, chef-client::systemd_service, openssh::default, sudo::default, users::default
+Platform:    centos 7.6.1810
+Tags:        
+
+Node Name:   palv0003
+Environment: _default
+FQDN:        
+IP:          172.27.71.171
+Run List:    role[it], role[inswitch], role[inicial], role[ntp], recipe[my_cookbook::inswitch]
+Roles:       it, inswitch, inicial, ntp
+Recipes:     my_cookbook::rootlog, dns, dns::default, usuarios::linux_admin, usuarios::eliminar, chef-client, chef-client::default, chef-client::delete_validation, ntp, ntp::default, my_cookbook::inswitch, chef-client::service, chef-client::systemd_service, openssh::default, sudo::default, users::default
+Platform:    centos 7.6.1810
+Tags:        
+
+Node Name:   palv0004
+Environment: _default
+FQDN:        
+IP:          172.27.71.172
+Run List:    role[it], role[inswitch], role[inicial]
+Roles:       it, inswitch, inicial
+Recipes:     my_cookbook::rootlog, dns, dns::default, usuarios::linux_admin, usuarios::eliminar, chef-client, chef-client::default, chef-client::delete_validation, chef-client::service, chef-client::systemd_service
+Platform:    centos 7.6.1810
+Tags:        
+
+Node Name:   dockerhost.digicelgroup.local
+Environment: _default
+FQDN:        dockerhost.digicelgroup.local
+IP:          172.27.71.138
+Run List:    role[inicial], role[it], role[ntp], recipe[my_cookbook::rootlog], recipe[my_cookbook::dockerhost], recipe[usuarios::hpe]
+Roles:       inicial, it, ntp
+Recipes:     dns, dns::default, usuarios::linux_admin, usuarios::eliminar, chef-client, chef-client::default, chef-client::delete_validation, my_cookbook::rootlog, ntp, ntp::default, my_cookbook::dockerhost, usuarios::hpe, chef-client::service, chef-client::systemd_service, openssh::default, sudo::default
+Platform:    debian 8.8
+Tags:        
+
+Node Name:   pandpgw002.digicelgroup.local
+Environment: _default
+FQDN:        pandpgw002.digicelgroup.local
+IP:          172.27.65.74
+Run List:    role[it], role[inicial], role[ntp], recipe[my_cookbook::pandpgw002]
+Roles:       it, inicial, ntp
+Recipes:     my_cookbook::rootlog, dns, dns::default, usuarios::linux_admin, usuarios::eliminar, chef-client, chef-client::default, chef-client::delete_validation, ntp, ntp::default, my_cookbook::pandpgw002, chef-client::service, chef-client::init_service, openssh::default, sudo::default
+Platform:    centos 6.8
+Tags:        
+
+Node Name:   srvapp007.digicelgroup.local
+Environment: _default
+FQDN:        srvapp007.digicelgroup.local
+IP:          172.27.98.152
+Run List:    role[it], role[ldap], role[ntp], recipe[my_cookbook::srvapp007]
+Roles:       it, ldap, ntp
+Recipes:     my_cookbook::rootlog, dns, dns::default, usuarios::eliminar, chef-client, chef-client::default, chef-client::delete_validation, ntp, ntp::default, my_cookbook::srvapp007, chef-client::service, chef-client::init_service, openssh::default, sudo::default
+Platform:    redhat 6.7
+Tags:        
+
+Node Name:   palv0001
+Environment: _default
+FQDN:        
+IP:          172.27.71.139
+Run List:    role[inicial], role[it], role[ntp], recipe[my_cookbook::palv0001]
+Roles:       inicial, it, ntp
+Recipes:     dns, dns::default, usuarios::linux_admin, usuarios::eliminar, chef-client, chef-client::default, chef-client::delete_validation, my_cookbook::rootlog, ntp, ntp::default, my_cookbook::palv0001, chef-client::service, chef-client::systemd_service, openssh::default, sudo::default, users::default
+Platform:    centos 7.6.1810
+Tags:        
+
+Node Name:   panroambkp002
+Environment: _default
+FQDN:        panroambkp002
+IP:          172.27.65.85
+Run List:    role[inicial], role[it], recipe[my_cookbook::panroambkp002]
+Roles:       inicial, it
+Recipes:     dns, dns::default, usuarios::linux_admin, usuarios::eliminar, chef-client, chef-client::default, chef-client::delete_validation, my_cookbook::rootlog, my_cookbook::panroambkp002, chef-client::service, chef-client::init_service, sudo::default, users::default
+Platform:    redhat 5.6
+Tags:        
+
+Node Name:   pandpgw003.digicelgroup.local
+Environment: _default
+FQDN:        pandpgw003.digicelgroup.local
+IP:          172.27.71.231
+Run List:    role[it], role[inicial], role[ntp], recipe[my_cookbook::pandpgw003]
+Roles:       it, inicial, ntp
+Recipes:     my_cookbook::rootlog, dns, dns::default, usuarios::linux_admin, usuarios::eliminar, chef-client, chef-client::default, chef-client::delete_validation, ntp, ntp::default, my_cookbook::pandpgw003, chef-client::service, chef-client::init_service, openssh::default, sudo::default
+Platform:    centos 6.8
+Tags:        
+
+Node Name:   pandpcm001.digicelgroup.local
+Environment: _default
+FQDN:        pandpcm001.digicelgroup.local
+IP:          172.27.65.72
+Run List:    role[enuso], role[it], role[ntp], recipe[my_cookbook::pandpcm001]
+Roles:       enuso, it, ntp
+Recipes:     dns, dns::default, usuarios::linux_admin, usuarios::eliminar, chef-client, chef-client::default, chef-client::delete_validation, my_cookbook::rootlog, ntp, ntp::default, my_cookbook::pandpcm001, chef-client::service, chef-client::init_service, openssh::default, sudo::default
+Platform:    centos 6.8
+Tags:        
+
+Node Name:   panadmunix000.digicelgroup.local
+Environment: _default
+FQDN:        panadmunix000.digicelgroup.local
+IP:          172.27.71.144
+Run List:    role[it], role[inicial], recipe[my_cookbook::panadmunix000]
+Roles:       it, inicial
+Recipes:     my_cookbook::rootlog, dns, dns::default, usuarios::linux_admin, usuarios::eliminar, chef-client, chef-client::default, chef-client::delete_validation, my_cookbook::panadmunix000, chef-client::service, chef-client::init_service, sudo::default
+Platform:    centos 5.6
+Tags:        
+
+Node Name:   pandbprod02
+Environment: _default
+FQDN:        pandbprod02
+IP:          172.27.98.142
+Run List:    role[it], role[inicial], role[ntp], recipe[usuarios::dba_admin], recipe[my_cookbook::pandbprod02], recipe[dns::oracle-rac]
+Roles:       it, inicial, ntp
+Recipes:     my_cookbook::rootlog, dns, dns::default, usuarios::linux_admin, usuarios::eliminar, chef-client, chef-client::default, chef-client::delete_validation, ntp, ntp::default, usuarios::dba_admin, my_cookbook::pandbprod02, dns::oracle-rac, chef-client::service, chef-client::systemd_service, openssh::default, sudo::default, users::default
+Platform:    oracle 7.5
+Tags:        
+
+Node Name:   pantransactionapp002
+Environment: _default
+FQDN:        
+IP:          172.27.71.234
+Run List:    role[inicial], role[it], role[ntp], recipe[my_cookbook::pantransactionapp002]
+Roles:       inicial, it, ntp
+Recipes:     dns, dns::default, usuarios::linux_admin, usuarios::eliminar, chef-client, chef-client::default, chef-client::delete_validation, my_cookbook::rootlog, ntp, ntp::default, my_cookbook::pantransactionapp002, chef-client::service, chef-client::systemd_service, openssh::default, sudo::default, users::default
+Platform:    centos 7.6.1810
+Tags:        
+
+Node Name:   pandpgw004.digicelgroup.local
+Environment: _default
+FQDN:        pandpgw004.digicelgroup.local
+IP:          172.27.71.230
+Run List:    role[it], role[inicial], role[ntp], recipe[my_cookbook::pandpgw004]
+Roles:       it, inicial, ntp
+Recipes:     my_cookbook::rootlog, dns, dns::default, usuarios::linux_admin, usuarios::eliminar, chef-client, chef-client::default, chef-client::delete_validation, ntp, ntp::default, my_cookbook::pandpgw004, chef-client::service, chef-client::init_service, openssh::default, sudo::default
+Platform:    centos 6.8
+Tags:        
+
+Node Name:   panidiro001.digicelgroup.local
+Environment: _default
+FQDN:        panidiro001.digicelgroup.local
+IP:          172.27.65.88
+Run List:    role[ldap], role[ntp], role[it]
+Roles:       ldap, ntp, it
+Recipes:     dns, dns::default, usuarios::eliminar, chef-client, chef-client::default, chef-client::delete_validation, ntp, ntp::default, my_cookbook::rootlog, chef-client::service, chef-client::init_service
+Platform:    redhat 6.8
+Tags:        
+
+Node Name:   panbigdata001.digicelgroup.local
+Environment: _default
+FQDN:        panbigdata001.digicelgroup.local
+IP:          172.27.71.223
+Run List:    role[it], role[enuso], role[ntp], recipe[my_cookbook::panbigdata001]
+Roles:       it, enuso, ntp
+Recipes:     my_cookbook::rootlog, dns, dns::default, usuarios::linux_admin, usuarios::eliminar, chef-client, chef-client::default, chef-client::delete_validation, ntp, ntp::default, my_cookbook::panbigdata001, chef-client::service, chef-client::init_service, ntp::apparmor, sudo::default, users::default
+Platform:    ubuntu 14.04
+Tags:        
+
+Node Name:   panlxd001
+Environment: _default
+FQDN:        panlxd001
+IP:          172.27.65.109
+Run List:    role[it], role[inicial], role[ntp], recipe[my_cookbook::panlxd001], role[cloud-digi]
+Roles:       it, inicial, ntp, cloud-digi
+Recipes:     my_cookbook::rootlog, dns, dns::default, usuarios::linux_admin, usuarios::eliminar, chef-client, chef-client::default, chef-client::delete_validation, ntp, ntp::default, my_cookbook::panlxd001, usuarios::cloud_transformation, chef-client::service, chef-client::systemd_service, ntp::apparmor, openssh::default, sudo::default
+Platform:    ubuntu 18.04
+Tags:        
+
+Node Name:   palv0008
+Environment: _default
+FQDN:        
+IP:          172.27.71.176
+Run List:    role[it], role[inswitch], role[inicial], role[ntp], recipe[my_cookbook::inswitch]
+Roles:       it, inswitch, inicial, ntp
+Recipes:     my_cookbook::rootlog, dns, dns::default, usuarios::linux_admin, usuarios::eliminar, chef-client, chef-client::default, chef-client::delete_validation, ntp, ntp::default, my_cookbook::inswitch, chef-client::service, chef-client::systemd_service, openssh::default, sudo::default, users::default
+Platform:    centos 7.6.1810
+Tags:        
+
+Node Name:   palv0007.digicelgroup.local
+Environment: _default
+FQDN:        palv0007.digicelgroup.local
+IP:          172.27.71.175
+Run List:    role[it], role[inswitch], role[inicial], role[ntp], recipe[my_cookbook::inswitch]
+Roles:       it, inswitch, inicial, ntp
+Recipes:     my_cookbook::rootlog, dns, dns::default, usuarios::linux_admin, usuarios::eliminar, chef-client, chef-client::default, chef-client::delete_validation, ntp, ntp::default, my_cookbook::inswitch, chef-client::service, chef-client::systemd_service, openssh::default, sudo::default, users::default
+Platform:    centos 7.8.2003
+Tags:        
+
+Node Name:   pandw-dmz.digicelgroup.local
+Environment: _default
+FQDN:        pandw-dmz.digicelgroup.local
+IP:          172.27.122.82
+Run List:    role[it], role[inicial], role[ntp], recipe[my_cookbook::pandw-dmz]
+Roles:       it, inicial, ntp
+Recipes:     my_cookbook::rootlog, dns, dns::default, usuarios::linux_admin, usuarios::eliminar, chef-client, chef-client::default, chef-client::delete_validation, ntp, ntp::default, my_cookbook::pandw-dmz, chef-client::service, chef-client::systemd_service, openssh::default, sudo::default
+Platform:    debian 8.5
+Tags:        
+
+Node Name:   PANMENTORDB001.digicelgroup.local
+Environment: _default
+FQDN:        PANMENTORDB001.digicelgroup.local
+IP:          172.27.90.16
+Run List:    role[it], role[inicial], role[ntp], role[mentor], recipe[usuarios::dba_admin], recipe[my_cookbook::panmentordb001]
+Roles:       it, inicial, ntp, mentor
+Recipes:     my_cookbook::rootlog, dns, dns::default, usuarios::linux_admin, usuarios::eliminar, chef-client, chef-client::default, chef-client::delete_validation, ntp, ntp::default, usuarios::dba_admin, my_cookbook::panmentordb001, chef-client::service, chef-client::systemd_service, openssh::default, sudo::default, users::default
+Platform:    centos 7.6.1810
+Tags:        
+
+Node Name:   pandbprod01
+Environment: _default
+FQDN:        pandbprod01
+IP:          172.27.98.141
+Run List:    role[it], role[inicial], role[ntp], recipe[usuarios::dba_admin], recipe[my_cookbook::pandbprod01], recipe[dns::oracle-rac]
+Roles:       it, inicial, ntp
+Recipes:     usuarios::cloud_transformation, dns, dns::default, usuarios::linux_admin, usuarios::eliminar, chef-client, chef-client::default, chef-client::delete_validation, ntp, ntp::default, usuarios::dba_admin, my_cookbook::pandbprod01, dns::oracle-rac, chef-client::service, chef-client::systemd_service, openssh::default, sudo::default, users::default
+Platform:    oracle 7.5
+Tags:        
+
+Node Name:   palv0006
+Environment: _default
+FQDN:        
+IP:          172.27.71.174
+Run List:    role[it], role[inswitch], role[inicial], role[ntp], recipe[my_cookbook::inswitch]
+Roles:       it, inswitch, inicial, ntp
+Recipes:     my_cookbook::rootlog, dns, dns::default, usuarios::linux_admin, usuarios::eliminar, chef-client, chef-client::default, chef-client::delete_validation, ntp, ntp::default, my_cookbook::inswitch, chef-client::service, chef-client::systemd_service, openssh::default, sudo::default, users::default
+Platform:    centos 7.6.1810
+Tags:        
+
