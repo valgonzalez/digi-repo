@@ -3,5 +3,6 @@
   "password": "$1$C3jSq9B5$9TO04JCk6qpNnKaTEflCt.",
   "shell": "\/bin\/bash",
   "groups": [ "linux_admin" ],
+  "action": "create",
   "comment": "Valentin Gonzalez E."
 }

@@ -3,5 +3,6 @@
   "password": "$1$rjspxaUo$LZo/W1VRnzGOG1r49SpZA1",
   "shell": "\/bin\/bash",
   "groups": [ "linux_admin" ],
+  "action": "create",
   "comment": "Usuario Operaciones IT."
 }

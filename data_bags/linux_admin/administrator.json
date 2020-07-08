@@ -1,0 +1,6 @@
+{
+  "id": "administrator",
+  "shell": "\/bin\/bash",
+  "groups": [ "linux_admin" ],
+  "action": "lock"
+}
