@@ -5,7 +5,7 @@
 # Copyright:: 2018, The Authors, All Rights Reserved.
 #
 node.default['authorization']['sudo']['passwordless'] = false
-node.default['authorization']['sudo']['groups'] = ['linux_admin', 'sudo', 'admin']
+node.default['authorization']['sudo']['groups'] = ['linux_admin', 'sudo', 'admin', 'cloud_transformation']
 #
 include_recipe 'sudo'
 #

@@ -3,5 +3,6 @@
   "password": "$1$ZRynUIY3$oDqEF8btp5almqNIzAyRm.",
   "shell": "\/bin\/bash",
   "groups": [ "transaction" ],
+  "action": "create",
   "comment": "transaction Support."
 }

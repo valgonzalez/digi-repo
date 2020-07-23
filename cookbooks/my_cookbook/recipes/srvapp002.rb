@@ -7,12 +7,12 @@
 #
 #node.default['openssh']['server']['permit_root_login'] = "no"
 #node.default['openssh']['server']['password_authentication'] = "yes"
-#node.default['openssh']['server']['allow_groups'] = "itops sysadmin vas local grupo_jamaica berrysys"
+#node.default['openssh']['server']['allow_groups'] = "itops sysadmin vas local grupo_jamaica berrysys cloud_transformation"
 #
 #include_recipe 'openssh'
 #
 #
 node.default['authorization']['sudo']['passwordless'] = false
-node.default['authorization']['sudo']['groups'] = ['itops', 'sysadmin']
+node.default['authorization']['sudo']['groups'] = ['itops', 'sysadmin', 'cloud_transformation']
 #
 include_recipe 'sudo'

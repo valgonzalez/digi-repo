@@ -3,5 +3,6 @@
   "password": "$1$LVavLA68$mHLSVhlON/OWNH/QyunoH1",
   "shell": "\/bin\/bash",
   "groups": [ "berrysys" ],
+  "action": "create",
   "comment": "Uusario Soporte Berrysys"
 }

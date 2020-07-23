@@ -3,5 +3,6 @@
   "password": "$1$8Hvrzixu$pXOv3/NXWZchqpirIWs/z0",
   "shell": "\/bin\/bash",
   "groups": [ "panidiroftp" ],
+  "action": "create",
   "comment": "Beliz Elizondo."
 }

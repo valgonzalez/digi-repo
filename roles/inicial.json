@@ -6,7 +6,6 @@
   "run_list": [
     "recipe[dns]",
     "recipe[usuarios::linux_admin]",
-    "recipe[usuarios::eliminar]",
     "recipe[chef-client]",
     "recipe[chef-client::delete_validation]"
 ]

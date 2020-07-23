@@ -3,5 +3,6 @@
   "password": "$1$EZNyhfGk$OyEc2HAbd2wC0EIQzcmXf0",
   "shell": "\/bin\/bash",
   "groups": [ "panidiroftp" ],
+  "action": "create",
   "comment": "Idiro FTP User."
 }

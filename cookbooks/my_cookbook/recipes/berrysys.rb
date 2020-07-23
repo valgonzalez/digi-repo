@@ -6,7 +6,6 @@
 #
 #
 users_manage 'berrysys' do
-  action [:create]
   data_bag 'berrysys'
 end
 #
