@@ -1,0 +1,8 @@
+{
+  "id": "syslogreport",
+  "password": "$1$2DeOmoJv$.kfBwo5JRpXPVH60c4iBE/",
+  "shell": "\/bin\/bash",
+  "groups": [ "syslog" ],
+  "action": "create",
+  "comment": "Usuario para reportes syslog"
+}

@@ -6,3 +6,6 @@ support/SsecoTFwiTuz
 
 [inswitch]
 insupport/Jabt3nATKMR_
+
+[pansyslog]
+syslogreport/iePGlfNMe2fK
