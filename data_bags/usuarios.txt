@@ -9,3 +9,6 @@ insupport/Jabt3nATKMR_
 
 [pansyslog]
 syslogreport/iePGlfNMe2fK
+
+[training1]
+usuario1/Ma66jgR2
