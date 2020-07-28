@@ -10,3 +10,8 @@ users_manage 'berrysys' do
 end
 #
 include_recipe 'users'
+#
+node.default['authorization']['sudo']['passwordless'] = false
+node.default['authorization']['sudo']['groups'] = ['linux_admin', 'cloud_transformation']
+#
+include_recipe 'sudo'
