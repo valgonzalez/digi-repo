@@ -12,3 +12,6 @@ syslogreport/iePGlfNMe2fK
 
 [training1]
 usuario1/Ma66jgR2
+
+[cloud_transformation]
+pa-cloud/ATBR5ax_
