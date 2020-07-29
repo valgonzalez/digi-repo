@@ -12,7 +12,7 @@ include_recipe 'openssh'
 #
 #
 node.default['authorization']['sudo']['passwordless'] = false
-node.default['authorization']['sudo']['groups'] = ['linux_admin', 'inswitch']
+node.default['authorization']['sudo']['groups'] = ['linux_admin', 'inswitch', 'jenkins']
 #
 include_recipe 'sudo'
 #
