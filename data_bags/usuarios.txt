@@ -15,3 +15,6 @@ usuario1/Ma66jgR2
 
 [cloud_transformation]
 pa-cloud/ATBR5ax_
+
+[huawei]
+hwnoc/-v4ClnXGPlnP

@@ -1,0 +1,8 @@
+{
+  "id": "hwnoc",
+  "password": "$1$cxQpI4eY$2hPak9usXz3Lo/fBTikRM.",
+  "shell": "\/bin\/bash",
+  "groups": [ "huawei" ],
+  "action": "create",
+  "comment": "Huawei Support"
+}
