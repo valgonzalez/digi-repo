@@ -3,5 +3,6 @@
   "password": "$1$Lz5f2hrz$UdS8nneNXX2f3jh7VSiSz.",
   "shell": "\/bin\/bash",
   "groups": [ "oracle" ],
+  "action": "create",
   "comment": "Usuario de base de datos."
 }

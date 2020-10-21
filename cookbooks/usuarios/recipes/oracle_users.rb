@@ -5,7 +5,6 @@
 # Copyright:: 2018, The Authors, All Rights Reserved.
 #
 users_manage 'oracle_users' do
-  action [:create]
   data_bag 'oracle_users'
 end
 
