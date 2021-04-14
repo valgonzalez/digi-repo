@@ -1,6 +1,6 @@
 #
 # Cookbook:: my_cookbook
-# Recipe:: panfogsrv001
+# Recipe:: k3snodo01
 #
 # Copyright:: 2018, The Authors, All Rights Reserved.
 #
